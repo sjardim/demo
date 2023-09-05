@@ -30,7 +30,7 @@ body  {
 }
 
 .fi-topbar .fi-dropdown-trigger button {
-    @apply border-0 bg-transparent p-0 text-xs
+    @apply border-0 bg-transparent p-0 text-sm
 }
 
 .fi-topbar .fi-dropdown-trigger:has(.fi-topbar-item-active) {
@@ -41,7 +41,7 @@ body  {
 }
 
 .fi-topbar-item a {
-    @apply text-xs bg-transparent py-2 px-3 rounded-none hover:bg-gradient-to-t from-primary-600 to-primary-400 hover:text-white
+    @apply text-sm bg-transparent py-2 px-3 rounded-none hover:bg-gradient-to-t from-primary-600 to-primary-400 hover:text-white
 }
 .fi-topbar-item-active a{
     @apply bg-gradient-to-t from-primary-600 to-primary-400 text-white
@@ -54,14 +54,14 @@ body  {
 
 
 .fi-header {
-    @apply relative -mt-8 -mx-8 bg-gradient-to-t from-slate-300 to-slate-200 p-1 border-b border-gray-500 justify-center !important
+    @apply relative -mt-8 -mx-8 bg-gradient-to-t from-slate-300 to-slate-200 p-2 border-b border-gray-500 justify-center !important
 }
 .fi-header::before {
     content: ' ';
     @apply absolute top-0 w-full border-t border-white
 }
 .fi-header .fi-header-heading {
-    @apply text-xs
+    @apply text-sm
 }
 
 .fi-sidebar-header {
@@ -89,10 +89,16 @@ body  {
     }
 } */
 
-.fi-topbar nav button {
+/* .fi-topbar nav button {
     @apply bg-gray-50 dark:bg-gray-900 border border-primary-600
-}
+} */
 
+.fi-icon-btn-icon {
+    @apply w-5 h-5
+}
+.fi-icon-btn-badge-ctn {
+    @apply top-1
+}
 
 .fi-input-wrp, .fi-fo-textarea {
     @apply border border-gray-200 rounded shadow-inner !important
@@ -142,10 +148,13 @@ input[type="checkbox"]  {
 
 /* Table Content */
 .fi-ta-ctn {
-    @apply shadow-xl
+    @apply rounded
 }
 .fi-section {
-    @apply border-none ring-0
+    @apply bg-white border-none ring-0 rounded
+}
+.fi-section-header-heading {
+    @apply text-sm
 }
 .fi-section-content-ctn {
     @apply bg-gray-50 dark:bg-gray-900
@@ -158,10 +167,13 @@ input[type="checkbox"]  {
     @apply bg-gray-50 dark:bg-gray-900
 }
 
-/* Form Actions */
+/* Form Actions on header and footer */
 .fi-ac {
     @apply justify-end
 }
+.fi-ac a {
+    @apply absolute top-12 right-8 z-10
+}
 .fi-ac .fi-btn-color-danger {
-    @apply absolute right-8 top-12
+    @apply absolute top-12 right-8 z-10
 }
