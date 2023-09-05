@@ -5,6 +5,7 @@
 body  {
     background: #3e6caf url(/public/img/bg-macos-aqua.jpeg) no-repeat fixed;
     background-size: cover;
+    padding-bottom: 6rem
 }
 
 .leaf-pattern {
