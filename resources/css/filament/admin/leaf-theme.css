@@ -1,0 +1,114 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@config './tailwind.config.js';
+
+body  {
+    /* border-radius: .5em 0 !important; */
+    background: rgb(46, 94, 21) url(/public/img/bg-macos-aqua.jpeg);
+   
+}
+
+.leaf-pattern {
+    fill:red;
+}
+.fi-main-ctn {
+    /* background-color: rgba(0, 0, 0, .5); */
+    
+    /* @apply bg-gray-50 dark:bg-gray-950 */
+}
+
+.fi-main {
+    @apply mt-10 bg-gray-50 dark:bg-gray-900 pt-0 rounded-md shadow-2xl border border-gray-500 overflow-hidden
+}
+.fi-header {
+    @apply relative -mt-8 -mx-8 bg-gradient-to-t from-slate-300 to-slate-200 p-1 border-b border-gray-500 justify-center !important
+}
+.fi-header::before {
+    content: ' ';
+    @apply absolute top-0 w-full border-t border-white
+}
+.fi-header .fi-breadcrumbs {
+    @apply hidden
+}
+.fi-header .fi-header-heading {
+    @apply text-xs
+}
+
+.fi-sidebar-header {
+    @apply bg-gray-50 dark:bg-gray-900 border-none ring-gray-50
+}
+/* .fi-sidebar {
+    @apply bg-gray-50 dark:bg-gray-900 
+} */
+.fi-sidebar-item a {
+    @apply text-gray-700
+}
+
+.fi-sidebar-item.fi-sidebar-item-active a, .fi-sidebar-item:hover a {
+    @apply bg-transparent bg-gradient-to-r from-white dark:from-primary-900 to-transparent text-primary-700;
+}
+
+.fi-sidebar-item-icon {
+    @apply text-gray-500 opacity-70;
+}
+
+.fi-sidebar-item.fi-sidebar-item-active a svg {
+    @apply text-primary-500 opacity-90
+}
+.fi-topbar nav {
+    /* background: #f9f8f7 url(/public/img/leaf-pattern-2.svg);
+    background-size: 60em; */
+    @apply bg-transparent shadow-none border-none relative z-20
+}
+/* @media (prefers-color-scheme: dark) {
+    .fi-topbar nav {
+        @apply bg-transparent first-letter:relative z-20
+    }
+} */
+
+.fi-topbar nav button {
+    @apply bg-gray-50 dark:bg-gray-900 border border-primary-600
+}
+/* .fi-topbar::after {
+    content: '';
+    @apply absolute z-10 bottom-0 h-12 w-full bg-gradient-to-t from-gray-50 to-transparent
+} */
+
+.fi-input-wrp, .fi-fo-textarea {
+    @apply border border-gray-200 rounded shadow-inner !important
+}
+
+input[type="checkbox"]  {
+    border-radius: .3em 0 !important;
+}
+/* .fi-btn {
+    @apply relative hover:-mt-1 transition-all duration-300 ease-in-out;
+} */
+
+/* .fi-btn::after {
+    content: '';
+    @apply absolute -z-10  translate-x-1 translate-y-1 h-full w-full bg-gray-200 rounded-tl-lg rounded-br-lg motion-reduce:transition-none duration-300 ease-in-out hover:translate-y-1.5;
+} */
+.fi-btn-color-primary {
+    @apply relative overflow-hidden pb-1 leading-3 px-6 bg-gradient-to-b from-primary-400 via-primary-200 to-primary-50 border border-slate-300 rounded-full focus:ring-primary-500/50
+}
+.fi-btn-color-primary::before {
+    content: '';
+    @apply  blur-[2px] rounded-3xl bg-gray-100 absolute -top-1 opacity-90 h-3 w-[90%] left-[5%]
+}
+.fi-btn-color-primary .fi-btn-label {
+    @apply relative z-20 -top-0.5 font-bold text-sm text-primary-900
+}
+
+/* <button class="relative overflow-hidden sm:mr-4 pb-0.5 leading-3 px-6 bg-gradient-to-b from-gray-500 via-gray-300 to-gray-50 border-gray-400 border rounded-full shadow-outline my-2">          
+            <span class="before:bg-gradient-to-b z-10 from-gray-50 to-gray-100 before:blur-[1px] before:block before:rounded-3xl before:bg-gray-100 before:h-3 before:w-full before:absolute before:-top-1 before:left-0"></span>
+            <span class="relative z-20 font-bold text-sm text-gray-900 opacity-80">Cancel</span>
+          </button> */
+/* Table Content */
+.fi-ta-ctn {
+    /* @apply shadow-md */
+}
+/* Table Header Content */
+.fi-ta-header-ctn {
+    @apply bg-gray-50 dark:bg-gray-900
+}
